@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="newsBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1e24" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+    <linearGradient id="newsCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="newsShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#newsBgGrad)" rx="16" />
+
+  <!-- App Window Container -->
+  <g transform="translate(40, 30)" filter="url(#newsShadow)">
+    <rect width="720" height="440" rx="12" fill="#090d16" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Header bar -->
+    <rect width="720" height="44" rx="12" fill="#1e293b" />
+    <circle cx="25" cy="22" r="5" fill="#ef4444" />
+    <circle cx="42" cy="22" r="5" fill="#f59e0b" />
+    <circle cx="59" cy="22" r="5" fill="#10b981" />
+
+    <!-- App Brand -->
+    <text x="90" y="27" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="700" font-size="14">GlobalLens 📰</text>
+    <text x="190" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Live News &amp; Insights</text>
+
+    <!-- Category tabs in header -->
+    <text x="440" y="26" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Tech</text>
+    <text x="485" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">World</text>
+    <text x="535" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Business</text>
+    <text x="600" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Science</text>
+    <text x="660" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Sports</text>
+
+    <!-- Breaking News Ticker -->
+    <rect x="25" y="58" width="670" height="30" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1"/>
+    <rect x="25" y="58" width="90" height="30" rx="6" fill="#ef4444"/>
+    <text x="36" y="78" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="11">BREAKING</text>
+    <text x="130" y="77" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11">Next-generation Web Frameworks redefine edge computing performance in 2026...</text>
+
+    <!-- Main Lead Article (Left 60%) -->
+    <g transform="translate(25, 102)">
+      <rect width="400" height="315" rx="10" fill="url(#newsCardGrad)" stroke="#334155"/>
+      <!-- Article Image Banner -->
+      <rect x="15" y="15" width="370" height="150" rx="8" fill="#1e1e2f"/>
+      <path d="M 50 140 L 120 70 L 190 110 L 270 45 L 360 120" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.6"/>
+      <circle cx="270" cy="45" r="5" fill="#38bdf8"/>
+      <rect x="30" y="30" width="85" height="22" rx="4" fill="#0284c7"/>
+      <text x="42" y="45" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="600" font-size="10">TECHNOLOGY</text>
+
+      <text x="20" y="190" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="700" font-size="15">The Future of Full-Stack Architecture:</text>
+      <text x="20" y="210" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="700" font-size="15">AI-Powered Developer Tooling</text>
+      <text x="20" y="235" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">How modern developers are leveraging reactive frameworks, component</text>
+      <text x="20" y="252" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">caching, and intelligent code assistants to build lightning-fast web apps.</text>
+
+      <text x="20" y="295" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">By Tech Desk • 4 min read • Updated 12 mins ago</text>
+    </g>
+
+    <!-- Right Side Articles (Right 40%) -->
+    <g transform="translate(440, 102)">
+      <!-- Mini Article 1 -->
+      <rect width="255" height="98" rx="8" fill="url(#newsCardGrad)" stroke="#334155"/>
+      <rect x="12" y="14" width="70" height="70" rx="6" fill="#0284c7" opacity="0.2"/>
+      <text x="28" y="55" fill="#38bdf8" font-size="20">🌐</text>
+      <text x="92" y="32" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">GREEN COMPUTING</text>
+      <text x="92" y="50" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Eco-Friendly Data Centers</text>
+      <text x="92" y="66" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Renewable power drives cloud...</text>
+      <text x="92" y="80" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">2 hours ago</text>
+
+      <!-- Mini Article 2 -->
+      <g transform="translate(0, 108)">
+        <rect width="255" height="98" rx="8" fill="url(#newsCardGrad)" stroke="#334155"/>
+        <rect x="12" y="14" width="70" height="70" rx="6" fill="#10b981" opacity="0.2"/>
+        <text x="28" y="55" fill="#10b981" font-size="20">📈</text>
+        <text x="92" y="32" fill="#10b981" font-family="system-ui, sans-serif" font-size="10" font-weight="600">ECONOMY</text>
+        <text x="92" y="50" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Fintech Innovations 2026</text>
+        <text x="92" y="66" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Digital wallets surpass cash in...</text>
+        <text x="92" y="80" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">4 hours ago</text>
+      </g>
+
+      <!-- Mini Article 3 -->
+      <g transform="translate(0, 216)">
+        <rect width="255" height="99" rx="8" fill="url(#newsCardGrad)" stroke="#334155"/>
+        <rect x="12" y="14" width="70" height="70" rx="6" fill="#f59e0b" opacity="0.2"/>
+        <text x="28" y="55" fill="#f59e0b" font-size="20">🌱</text>
+        <text x="92" y="32" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="10" font-weight="600">CLIMATE &amp; NATURE</text>
+        <text x="92" y="50" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Urban Rooftop Gardening</text>
+        <text x="92" y="66" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Cities embrace micro-forests...</text>
+        <text x="92" y="80" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">6 hours ago</text>
+      </g>
+    </g>
+  </g>
+</svg>

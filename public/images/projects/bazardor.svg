@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="16" />
+
+  <!-- App Window Container -->
+  <g transform="translate(40, 30)" filter="url(#shadow)">
+    <!-- Browser/App Chrome -->
+    <rect width="720" height="440" rx="12" fill="#0b1120" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Header bar -->
+    <rect width="720" height="44" rx="12" fill="#1e293b" />
+    <circle cx="25" cy="22" r="5" fill="#ef4444" />
+    <circle cx="42" cy="22" r="5" fill="#f59e0b" />
+    <circle cx="59" cy="22" r="5" fill="#10b981" />
+
+    <!-- App Brand -->
+    <text x="90" y="27" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="700" font-size="14">BazarDor 🛒</text>
+    <text x="180" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Daily Commodity Rate Tracker</text>
+
+    <!-- Search Bar in header -->
+    <rect x="460" y="11" width="230" height="24" rx="12" fill="#0f172a" stroke="#334155"/>
+    <text x="480" y="27" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">🔍 Search rice, oil, onions...</text>
+
+    <!-- Content Area -->
+    <!-- Hero Banner inside app -->
+    <rect x="25" y="65" width="670" height="70" rx="10" fill="url(#accentGrad)" opacity="0.15" stroke="#10b981" stroke-width="1" stroke-dasharray="4 2"/>
+    <text x="45" y="98" fill="#34d399" font-family="system-ui, sans-serif" font-weight="700" font-size="18">Dhaka Market Rates — Updated Today</text>
+    <text x="45" y="120" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Live comparison across Kawran Bazar, Mohammadpur &amp; Mirpur-1</text>
+
+    <!-- 3 Commodity Price Cards -->
+    <!-- Card 1: Rice -->
+    <rect x="25" y="150" width="205" height="120" rx="10" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="40" y="178" fill="#e2e8f0" font-family="system-ui, sans-serif" font-weight="600" font-size="14">Miniket Rice (50kg)</text>
+    <text x="40" y="210" fill="#10b981" font-family="system-ui, sans-serif" font-weight="700" font-size="22">৳ 3,450</text>
+    <rect x="40" y="224" width="75" height="20" rx="10" fill="#065f46"/>
+    <text x="50" y="238" fill="#34d399" font-family="system-ui, sans-serif" font-size="11">▼ -2.5% today</text>
+    <text x="40" y="258" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Kawran Bazar avg.</text>
+
+    <!-- Card 2: Onion -->
+    <rect x="255" y="150" width="205" height="120" rx="10" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="270" y="178" fill="#e2e8f0" font-family="system-ui, sans-serif" font-weight="600" font-size="14">Local Onion (1kg)</text>
+    <text x="270" y="210" fill="#f43f5e" font-family="system-ui, sans-serif" font-weight="700" font-size="22">৳ 110</text>
+    <rect x="270" y="224" width="75" height="20" rx="10" fill="#881337"/>
+    <text x="280" y="238" fill="#fda4af" font-family="system-ui, sans-serif" font-size="11">▲ +4.2% today</text>
+    <text x="270" y="258" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Mohammadpur Krishi</text>
+
+    <!-- Card 3: Soybean Oil -->
+    <rect x="485" y="150" width="210" height="120" rx="10" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="500" y="178" fill="#e2e8f0" font-family="system-ui, sans-serif" font-weight="600" font-size="14">Soybean Oil (5L)</text>
+    <text x="500" y="210" fill="#38bdf8" font-family="system-ui, sans-serif" font-weight="700" font-size="22">৳ 890</text>
+    <rect x="500" y="224" width="75" height="20" rx="10" fill="#075985"/>
+    <text x="510" y="238" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="11">● Stable rate</text>
+    <text x="500" y="258" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Govt. Mandated Rate</text>
+
+    <!-- Chart preview section -->
+    <rect x="25" y="290" width="670" height="130" rx="10" fill="url(#cardGrad)" stroke="#334155"/>
+    <text x="45" y="318" fill="#e2e8f0" font-family="system-ui, sans-serif" font-weight="600" font-size="13">30-Day Market Volatility Index</text>
+
+    <!-- Simple SVG Sparkline / Graph -->
+    <polyline fill="none" stroke="#10b981" stroke-width="2.5" points="45,395 110,380 180,385 250,350 320,360 400,340 480,355 560,330 630,345 675,320"/>
+    <circle cx="675" cy="320" r="4" fill="#34d399"/>
+    
+    <!-- Grid lines -->
+    <line x1="45" y1="340" x2="675" y2="340" stroke="#334155" stroke-dasharray="2 4"/>
+    <line x1="45" y1="375" x2="675" y2="375" stroke="#334155" stroke-dasharray="2 4"/>
+    <text x="45" y="410" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Oct 01</text>
+    <text x="250" y="410" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Oct 10</text>
+    <text x="450" y="410" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Oct 20</text>
+    <text x="645" y="410" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Today</text>
+  </g>
+</svg>
